@@ -22,6 +22,7 @@ class Migration(migrations.Migration):
                 ('label', models.CharField(max_length=30, unique=True)),
                 ('slug', autoslug.fields.AutoSlugField(editable=False, populate_from='label', unique_with=('id',))),
                 ('followers', models.ManyToManyField(related_name='tags', to=settings.AUTH_USER_MODEL)),
+                ('created_on', models.DateTimeField(auto_now_add=True)),
             ],
         ),
     ]

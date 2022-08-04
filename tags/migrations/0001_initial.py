@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Tag',
             fields=[
-                ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('label', models.CharField(max_length=30, unique=True)),
                 ('slug', autoslug.fields.AutoSlugField(editable=False, populate_from='label', unique_with=('id',))),
                 ('followers', models.ManyToManyField(related_name='tags', to=settings.AUTH_USER_MODEL)),

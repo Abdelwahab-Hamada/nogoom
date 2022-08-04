@@ -28,7 +28,7 @@ SECRET_KEY = config('SK')
 DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
-    'https://nogoom-app.herokuapp.com/',
+    'nogoom-app.herokuapp.com/',
     '127.0.0.1',
     'localhost',
 ]

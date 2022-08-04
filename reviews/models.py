@@ -8,7 +8,7 @@ import math
 from tags.models import Tag
 
 class Review(models.Model):
-    temp_id = models.UUIDField(default=uuid.uuid4,primary_key=True)
+    id = models.UUIDField(default=uuid.uuid4,primary_key=True)
     reviewer=models.ForeignKey(settings.AUTH_USER_MODEL,related_name='reviews',on_delete=models.CASCADE)
     tags=models.ManyToManyField(Tag,related_name='reviews')
     score=models.IntegerField()

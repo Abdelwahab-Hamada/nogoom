@@ -16,7 +16,7 @@ class TagQuerySet(models.QuerySet):
 
 
 class Tag(models.Model):
-    temp_id = models.UUIDField(default=uuid.uuid4)
+    temp_id = models.UUIDField(default=uuid.uuid4,primary_key=True)
     label=models.CharField(max_length=30,unique=True)
     slug=AutoSlugField(unique_with='id',populate_from='label')
     followers=models.ManyToManyField(settings.AUTH_USER_MODEL,related_name='tags')

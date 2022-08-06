@@ -64,7 +64,8 @@ class APIAuthentication(APIView):
                     httponly = settings.SIMPLE_JWT['AUTH_COOKIE_HTTP_ONLY'],
                     samesite = settings.SIMPLE_JWT['AUTH_COOKIE_SAMESITE']
                 )
-                csrf.get_token(request)                
+                csrf.get_token(request)   
+                response["Access-Control-Allow-Credentials"]=True
 
                 response.data = {'access':data['access']}
                 return response

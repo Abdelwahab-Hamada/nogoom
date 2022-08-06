@@ -169,10 +169,9 @@ CORS_ALLOWED_ORIGINS = [
     'https://abdelwahabyoussef.github.io',
 ]
 
-from corsheaders.defaults import default_headers
-CORS_ALLOW_HEADERS = default_headers + (
-    'Access-Control-Allow-Origin',
-)
+CSRF_TRUSTED_ORIGINS = [
+    'https://abdelwahabyoussef.github.io',
+]
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -216,7 +215,7 @@ SIMPLE_JWT.update({# custom
   'AUTH_COOKIE_SECURE': False,    # Whether the auth cookies should be secure (https:// only).
   'AUTH_COOKIE_HTTP_ONLY' : True, # Http only cookie flag.It's not fetch by javascript.
   'AUTH_COOKIE_PATH': '/',        # The path of the auth cookie.
-  'AUTH_COOKIE_SAMESITE': "Strict",  # Whether to set the flag restricting cookie leaks on cross-site requests. This can be 'Lax', 'Strict', or None to disable the flag.
+  'AUTH_COOKIE_SAMESITE': "Lax",  # Whether to set the flag restricting cookie leaks on cross-site requests. This can be 'Lax', 'Strict', or None to disable the flag.
 })
 
 STATIC_URL = '/static/'

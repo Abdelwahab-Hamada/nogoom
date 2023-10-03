@@ -3,7 +3,7 @@
 
 
 # an app to post reviews with help of tagging system
-#### 🔗 [**Nogoom fullstack app link**](https://abdelwahab-hamada.github.io/nogoom-app/)
+<!-- #### 🔗 [**Nogoom fullstack app link**](https://abdelwahab-hamada.github.io/nogoom-app/) -->
 ## Technologies 
 <p align="left"> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a>  <a href="#" target="_blank" rel="noreferrer"> <img src="https://www.django-rest-framework.org/img/logo.png" alt="django rest framework" width="" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>   </p>
 
